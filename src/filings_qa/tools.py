@@ -33,7 +33,7 @@ FINNHUB_NEWS_URL = "https://finnhub.io/api/v1/company-news?symbol={symbol}&from=
 FINNHUB_KEY_ENV = "FINNHUB_API_KEY"
 FINNHUB_MAX_ITEMS = 250  # a company-news reply holds at most this many items, the newest first
 FINNHUB_MAX_REQUESTS = 4  # per get_news call, going further back while replies are full
-USER_AGENT = "filings-qa (https://github.com/jackieyangjq/filings-qa-agent)"
+USER_AGENT = "filings-qa (https://github.com/jackyyangjq/filings-qa-agent)"
 HTTP_TIMEOUT_S = 20
 DEFAULT_SEARCH_K = 6
 MAX_SEARCH_K = 12

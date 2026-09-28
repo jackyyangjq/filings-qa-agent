@@ -21,7 +21,7 @@ from typing import Any, NamedTuple
 import requests
 
 USER_AGENT_ENV = "SEC_USER_AGENT"
-DEFAULT_USER_AGENT = "filings-qa (https://github.com/jackieyangjq/filings-qa-agent)"
+DEFAULT_USER_AGENT = "filings-qa (https://github.com/jackyyangjq/filings-qa-agent)"
 TICKERS_URL = "https://www.sec.gov/files/company_tickers.json"
 SUBMISSIONS_URL = "https://data.sec.gov/submissions/CIK{cik:010d}.json"
 ARCHIVES_URL = "https://www.sec.gov/Archives/edgar/data/{cik}/{folder}/{doc}"

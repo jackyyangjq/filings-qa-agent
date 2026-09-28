@@ -2,7 +2,7 @@
 
 **English** | [简体中文](README.zh-CN.md)
 
-[![CI](https://github.com/jackieyangjq/filings-qa-agent/actions/workflows/ci.yml/badge.svg)](https://github.com/jackieyangjq/filings-qa-agent/actions/workflows/ci.yml)
+[![CI](https://github.com/jackyyangjq/filings-qa-agent/actions/workflows/ci.yml/badge.svg)](https://github.com/jackyyangjq/filings-qa-agent/actions/workflows/ci.yml)
 
 Question answering over SEC 10-K and 10-Q filings with a checkable source on every sentence, a tool-using research agent, and an evaluation of three ways to retrieve the passages.
 
@@ -128,14 +128,14 @@ These changes, and the prompt rules that go with them, were made while looking a
 Needs Python 3.12 or later. The package is not on PyPI, so install it from GitHub; the demo needs no key, network or optional extra:
 
 ```bash
-pip install "filings-qa-agent @ git+https://github.com/jackieyangjq/filings-qa-agent"
+pip install "filings-qa-agent @ git+https://github.com/jackyyangjq/filings-qa-agent"
 filings-qa demo
 ```
 
 For real use, clone the repository, which holds the company list, the evaluation questions and `.env.example`, and install the extras: `embed` (fastembed, for the vectors), `llm` (google-genai) and `tools` (yfinance, for the agent's prices). Then four steps:
 
 ```bash
-git clone https://github.com/jackieyangjq/filings-qa-agent && cd filings-qa-agent
+git clone https://github.com/jackyyangjq/filings-qa-agent && cd filings-qa-agent
 pip install -e ".[embed,llm,tools]"
 
 # 1. Keys. SEC_USER_AGENT is your name and email, "Name email@example.com": SEC refuses automated requests

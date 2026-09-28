@@ -2,7 +2,7 @@
 
 [English](README.md) | **简体中文**
 
-[![CI](https://github.com/jackieyangjq/filings-qa-agent/actions/workflows/ci.yml/badge.svg)](https://github.com/jackieyangjq/filings-qa-agent/actions/workflows/ci.yml)
+[![CI](https://github.com/jackyyangjq/filings-qa-agent/actions/workflows/ci.yml/badge.svg)](https://github.com/jackyyangjq/filings-qa-agent/actions/workflows/ci.yml)
 
 针对公司向美国证券交易委员会（SEC）提交的 10-K 年报和 10-Q 季报做问答，每句话都附可核对的出处。另外还有一个会调用工具的研究智能体（agent：能自己决定调用哪些工具、分几步完成任务的模型程序），以及对三种段落检索方式的评测。
 
@@ -128,14 +128,14 @@ BM25 关键词检索表现最好，正确率 95.0%。不过题目是照着文本
 需要 Python 3.12 或更高版本。这个包没有发布到 PyPI（Python 官方的软件包仓库），所以从 GitHub 安装。演示本身不需要密钥、网络或任何可选依赖：
 
 ```bash
-pip install "filings-qa-agent @ git+https://github.com/jackieyangjq/filings-qa-agent"
+pip install "filings-qa-agent @ git+https://github.com/jackyyangjq/filings-qa-agent"
 filings-qa demo
 ```
 
 正式使用时，先克隆仓库（里面有公司名单、评测题和 `.env.example`），再装上三组可选依赖（extra，按需安装的附加包）：`embed`（fastembed，用来算向量）、`llm`（google-genai，Google 的 Gemini 开发库）和 `tools`（yfinance，给智能体取股价）。然后分四步：
 
 ```bash
-git clone https://github.com/jackieyangjq/filings-qa-agent && cd filings-qa-agent
+git clone https://github.com/jackyyangjq/filings-qa-agent && cd filings-qa-agent
 pip install -e ".[embed,llm,tools]"
 
 # 1. 密钥。SEC_USER_AGENT 填你的名字和邮箱，格式为 "Name email@example.com"：SEC 会拒绝不留
